@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: "json" } do
     get :me, to: 'me#me'
   end
+  
+  resources :people
 
   root to: "main#index"
 end
