@@ -1,11 +1,17 @@
 class PeopleService
   def self.get
-    HTTParty.get(url)
+    HTTParty.get(url, headers: headers)
   end
 
   private
 
   def self.url
     Rails.application.config.salesloft_api_url
+  end
+
+  def self.headers
+    {
+        "Authorization":"Bearer #{Rails.application.config.salesloft_api_key}"
+    }
   end
 end

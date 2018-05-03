@@ -16,5 +16,6 @@ module SalesLoftIntegration
     # -- all .rb files in that directory are automatically loaded.
     
     config.salesloft_api_url = ENV['SALESLOFT_API_URL']
+    config.salesloft_api_key = ENV['SALESLOFT_API_KEY']
   end
 end
