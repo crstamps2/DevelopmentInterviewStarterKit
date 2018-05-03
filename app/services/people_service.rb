@@ -1,4 +1,5 @@
 class PeopleService
-    def self.get
-    end
+  def self.get
+    HTTParty.get("bogus-url.com")
+  end
 end
