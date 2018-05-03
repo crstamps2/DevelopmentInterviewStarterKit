@@ -1,5 +1,5 @@
 class PeopleController < ApplicationController
   def index
-    render json: {blah:"blah"}
+    render json: PeopleService.get
   end
 end
