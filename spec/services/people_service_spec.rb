@@ -9,7 +9,7 @@ RSpec.describe PeopleService, type: :service do
     end
 
     it 'gets a list of people from an api call' do
-      expect(HTTParty).to receive(:get).with('bogus-url.com',
+      expect(HTTParty).to receive(:get).with('bogus-url.com/people.json',
         headers: {
             "Authorization":"Bearer 123456"
         })

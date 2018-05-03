@@ -6,7 +6,7 @@ class PeopleService
   private
 
   def self.url
-    Rails.application.config.salesloft_api_url
+    Rails.application.config.salesloft_api_url + '/people.json'
   end
 
   def self.headers
