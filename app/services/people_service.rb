@@ -7,5 +7,5 @@ class PeopleService
 
   def self.url
     Rails.application.config.salesloft_api_url
-end
+  end
 end
